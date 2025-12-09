@@ -1,23 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+import Slider3D from "./component/Slider";
 
 function App() {
+  const slides = [
+    "/image/1.jpg",
+    "/image/2.jpg",
+    "/image/3.jpg",
+    "/image/4.png",
+    "/image/5.png",
+    "/image/6.jpg",
+  ];
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Slider3D slides={slides} />
     </div>
   );
 }
